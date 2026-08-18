@@ -10,15 +10,15 @@ gsap.registerPlugin(ScrollTrigger);
 const PILLARS = [
   {
     title: "You draw the line",
-    body: "You decide what is included and what never leaves the premises. Identifiers are stripped before anything is licensed, and we do not want them in the first place.",
+    body: "You choose what is included. We remove all personal details before anything is sold. We do not want them in the first place.",
   },
   {
     title: "You pick the buyer",
-    body: "Approve each licensee and each permitted use in writing. Say no to a competitor, a category, or a whole industry. Revoke access later if you change your mind.",
+    body: "You approve every buyer and every use in writing. Say no to a competitor, an industry, or anyone at all. Change your mind later and we cut off access.",
   },
   {
     title: "You choose the money",
-    body: "Cash upfront, ongoing royalties, or both. Terms are yours to change at renewal. It is your data; we make sure you get paid like it.",
+    body: "Cash upfront, royalties, or both. You can change the terms when the licence renews. It is your data, and we make sure you get paid like it.",
   },
 ];
 

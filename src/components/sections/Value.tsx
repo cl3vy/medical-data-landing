@@ -8,17 +8,17 @@ import { Reveal } from "@/components/ui/Reveal";
 gsap.registerPlugin(ScrollTrigger);
 
 const BUYERS = [
-  "Operational records and the decisions behind them",
-  "Disputes, exceptions, and what resolved them",
-  "Intake, routing, and handoff trails",
-  "Transactions and outcomes attached to them",
+  "Your records and the decisions behind them",
+  "Problems, disputes, and how you solved them",
+  "How work moves from start to finish",
+  "Transactions and what happened after",
   "Anything a new hire would take a year to learn",
 ];
 
 const METERS = [
-  { label: "Public web text", pct: 100, accent: false },
-  { label: "Books, archives, licensed text", pct: 84, accent: false },
-  { label: "Operational records inside companies", pct: 3, accent: true },
+  { label: "Public internet text — used up", pct: 100, accent: false },
+  { label: "Books and licensed text — mostly used", pct: 84, accent: false },
+  { label: "Business records inside companies — barely touched", pct: 3, accent: true },
 ];
 
 export function Value() {
@@ -69,7 +69,7 @@ export function Value() {
       >
         <div>
           <Reveal as="h2" id="value-h" className="text-[clamp(2rem,4.8vw,3.6rem)] leading-[1] tracking-[-0.03em] font-extrabold">
-            The easy data is gone.
+            The free data is gone.
             <br />
             Yours is what&apos;s left.
           </Reveal>
@@ -78,19 +78,17 @@ export function Value() {
             delay={0.08}
             className="mt-[var(--space-group)] text-[clamp(1rem,1.3vw,1.15rem)] leading-[1.6] max-w-[54ch] text-pretty"
           >
-            Labs scraped the whole internet and hit the bottom of it. What they
-            cannot scrape is judgment: the claims adjuster who knows which case
-            settles, the dispatcher who knows which route holds, the underwriter
-            who knows which risk is mispriced. That knowledge lives in your
-            records and nowhere else. Scarce things get expensive, and the
-            deeper your expertise, the bigger the check.
+            AI companies have used up the free data on the internet. Now they
+            need real business records that show how work actually gets done.
+            That only exists inside companies like yours. They will pay a lot
+            for it.
           </Reveal>
           <Reveal
             as="p"
             delay={0.12}
             className="mt-[var(--space-block)] text-[10px] font-semibold tracking-[0.16em] uppercase text-[var(--color-neutral-700)]"
           >
-            What buyers ask for
+            What they want
           </Reveal>
           <ul className="mt-[var(--space-item)]">
             {BUYERS.map((item, i) => (
@@ -119,7 +117,7 @@ export function Value() {
             className="border-t-2 border-[var(--color-divider)] pt-[var(--space-item)]"
           >
             <figcaption className="text-[10px] font-semibold tracking-[0.16em] uppercase text-[var(--color-neutral-700)] mb-[var(--space-group)]">
-              Fig. 01 — Supply of training data, consumed
+              Fig. 01 — How much training data is left
             </figcaption>
             <ul ref={metersRef} className="flex flex-col gap-10">
               {METERS.map((m) => (
@@ -149,8 +147,7 @@ export function Value() {
               ))}
             </ul>
             <p className="mt-[var(--space-group)] pt-[var(--space-item)] border-t border-[var(--color-divider)] text-[12px] leading-relaxed text-[var(--color-neutral-700)]">
-              Illustrative figures. The point holds: the untouched supply is
-              the part you are sitting on.
+              The part nobody can reach is the part you are sitting on.
             </p>
           </Reveal>
         </div>

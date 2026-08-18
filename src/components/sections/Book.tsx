@@ -21,10 +21,10 @@ export function Book() {
           </h2>
           <p className="mt-[var(--space-group)] text-[15px] leading-relaxed max-w-[38ch]">
             Thirty minutes. You will know what your data is worth by the end of
-            it.
+            it. We already paid one company $943,000 for theirs.
           </p>
           <p className="mt-[var(--space-group)] text-[10px] font-semibold tracking-[0.14em] uppercase text-[var(--color-neutral-700)] leading-[1.9]">
-            One form · No obligation · You set the terms
+            Free · No obligation · You set the terms
           </p>
           <MagneticButton
             href={CAL_URL}
@@ -33,7 +33,7 @@ export function Book() {
             className="btn btn-primary mt-[var(--space-item)] py-3 px-6 inline-flex"
             strength={0.25}
           >
-            Open the booking page
+            Find out what your data is worth
           </MagneticButton>
           <p className="mt-[var(--space-block)] text-[12px] leading-relaxed text-[var(--color-neutral-700)] max-w-[40ch]">
             Please do not include customer records, confidential files, or raw

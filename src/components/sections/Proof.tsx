@@ -9,9 +9,9 @@ import { Reveal } from "@/components/ui/Reveal";
 gsap.registerPlugin(ScrollTrigger);
 
 const FACTS = [
-  { dt: "Appraisal", dd: "Free. One form." },
-  { dt: "Timeline", dd: "An offer in about two weeks." },
-  { dt: "Payment", dd: "Cash upfront, royalties, or both." },
+  { dt: "Free appraisal", dd: "One form. No cost." },
+  { dt: "Fast offer", dd: "A real number in about two weeks." },
+  { dt: "You get paid", dd: "Cash upfront, royalties, or both." },
 ];
 
 export function Proof() {
@@ -55,7 +55,7 @@ export function Proof() {
             className="font-extrabold text-[clamp(3.4rem,9vw,7rem)] leading-[0.88] tracking-[-0.045em] text-[var(--color-accent)]"
           />
           <p className="mt-[var(--space-group)] text-[clamp(1rem,1.3vw,1.15rem)] leading-[1.45] max-w-[26ch]">
-            paid to a single customer for one dataset.
+            paid to one company for a single dataset.
           </p>
         </div>
         <dl className="flex flex-col justify-between py-[var(--space-block)] pl-0 md:pl-[var(--gutter)]">

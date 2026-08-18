@@ -21,8 +21,8 @@ export function Footer() {
         <strong className="font-semibold">
           Do not submit confidential data through this website.
         </strong>{" "}
-        Please do not include customer records, confidential files, or raw
-        datasets in the form. Describe the data, do not send it.
+        Please describe your data here. Do not upload records, customer files,
+        or anything sensitive.
       </p>
       <p className="mt-[var(--space-item)] text-[11px] leading-relaxed text-[var(--color-neutral-700)] max-w-[78ch]">
         © 2026 Sigil. Financial figures describe representative and potential

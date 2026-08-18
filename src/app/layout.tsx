@@ -13,7 +13,7 @@ const archivo = Archivo({
 export const metadata: Metadata = {
   title: "SIGIL — Data licensing",
   description:
-    "Get paid for the operational data already sitting in your systems. Free appraisal. You approve every deal.",
+    "AI companies pay real money for business records you already own. Free appraisal. No commitment. You approve every deal.",
 };
 
 export default function RootLayout({

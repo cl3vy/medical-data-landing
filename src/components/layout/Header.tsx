@@ -55,7 +55,7 @@ export function Header() {
             href="#inquire"
             className="btn btn-primary no-underline"
           >
-            Free data appraisal
+            Free appraisal
           </a>
           <button
             data-mobile-only
@@ -101,7 +101,7 @@ export function Header() {
               transition={{ delay: 0.28, duration: 0.35 }}
               className="btn btn-primary btn-block mt-[var(--space-block)] py-4"
             >
-              Free data appraisal
+              Free appraisal
             </motion.a>
           </motion.div>
         )}

@@ -94,19 +94,40 @@ function SelectField({
 export function Inquire() {
   const [step, setStep] = useState<Step>(1);
   const [sent, setSent] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const [form, setForm] = useState<FormState>(EMPTY);
 
   function set<K extends keyof FormState>(key: K, value: FormState[K]) {
     setForm((prev) => ({ ...prev, [key]: value }));
   }
 
-  function goNext(e: React.FormEvent<HTMLFormElement>) {
+  async function goNext(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    setError(null);
     if (step === 1) {
       setStep(2);
       return;
     }
-    setSent(true);
+
+    setSubmitting(true);
+    try {
+      const res = await fetch("/api/inquire", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      const data = (await res.json().catch(() => null)) as { error?: string } | null;
+      if (!res.ok) {
+        setError(data?.error ?? "Could not send. Try again.");
+        return;
+      }
+      setSent(true);
+    } catch {
+      setError("Could not send. Try again.");
+    } finally {
+      setSubmitting(false);
+    }
   }
 
   return (
@@ -269,10 +290,7 @@ export function Inquire() {
                         onChange={(v) => set("rights", v)}
                       />
                     </div>
-                    <button
-                      type="submit"
-                      className="btn btn-primary self-start py-3 px-6"
-                    >
+                    <button type="submit" className="btn btn-primary btn-block py-3 px-6">
                       Continue
                     </button>
                   </motion.div>
@@ -351,13 +369,23 @@ export function Inquire() {
                         type="button"
                         className="btn btn-secondary py-3 px-6"
                         onClick={() => setStep(1)}
+                        disabled={submitting}
                       >
                         Back
                       </button>
-                      <button type="submit" className="btn btn-primary py-3 px-6">
-                        Get my appraisal
+                      <button
+                        type="submit"
+                        className="btn btn-primary py-3 px-6"
+                        disabled={submitting}
+                      >
+                        {submitting ? "Sending…" : "Get my appraisal"}
                       </button>
                     </div>
+                    {error ? (
+                      <p className="text-[13px] leading-relaxed text-[var(--color-accent)]">
+                        {error}
+                      </p>
+                    ) : null}
                   </motion.div>
                 )}
               </AnimatePresence>

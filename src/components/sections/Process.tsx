@@ -1,26 +1,27 @@
 import { Reveal } from "@/components/ui/Reveal";
+import { MagneticButton } from "@/components/ui/MagneticButton";
 
 const STEPS = [
   {
     n: "01",
     title: "Free appraisal",
-    body: "We look at what you have and tell you what it is worth. One form. No cost, no paperwork, no obligation to do anything with the number.",
+    body: "We look at what you have and tell you what it is worth. One form. No cost, no paperwork, no obligation. Keep the number and walk away if you want.",
     example:
-      "A logistics operator brought eleven years of dispatch and delivery records. Appraised at $600k–$1.1M.",
+      "A shipping company brought eleven years of records. Appraised at $600k to $1.1M.",
   },
   {
     n: "02",
     title: "You set the terms",
-    body: "You choose what is included, who is allowed to license it, and how the money arrives. We handle the cleaning, the structuring, and the buyers. Nothing moves until you sign.",
+    body: "You choose what is included, who can buy it, and how you get paid. We handle the cleaning, the structuring, and the buyers. Nothing moves until you sign.",
     example:
-      "They excluded raw documents, barred two competitors, took half upfront and half as royalty.",
+      "They left out sensitive files, blocked two competitors, and took half upfront and half in royalties.",
   },
   {
     n: "03",
     title: "You get paid",
-    body: "Checks start arriving, and they keep arriving. You walk away owning a clean dataset you never had before, plus a licence you can renegotiate or end.",
+    body: "The money starts arriving and keeps arriving. You end up owning a clean dataset you never had before, plus a licence you can renew or cancel.",
     example:
-      "First payment cleared 34 days after the appraisal. Royalties renew annually.",
+      "The first payment landed 34 days after the appraisal. Royalties renew every year.",
   },
 ];
 
@@ -63,6 +64,11 @@ export function Process() {
           </Reveal>
         ))}
       </ol>
+      <Reveal delay={0.2} className="mt-[var(--space-block)]">
+        <MagneticButton href="#inquire" className="btn btn-primary py-3 px-6" strength={0.25}>
+          Find out what your data is worth
+        </MagneticButton>
+      </Reveal>
     </section>
   );
 }

@@ -78,16 +78,13 @@ export function Hero() {
 
       <h1
         id="hero-h"
-        className="mt-[var(--space-group)] text-[clamp(2.25rem,5.8vw,5.2rem)] leading-[0.98] tracking-[-0.04em] font-extrabold max-w-[18ch]"
+        className="mt-[var(--space-group)] text-[clamp(2.25rem,5.8vw,5.2rem)] leading-[0.98] tracking-[-0.04em] font-extrabold max-w-[22ch]"
       >
         <span className="line-mask">
           <span style={{ animationDelay: "60ms" }}>$300,000 to $3,000,000</span>
         </span>
         <span className="line-mask">
-          <span style={{ animationDelay: "140ms" }}>for the data already</span>
-        </span>
-        <span className="line-mask">
-          <span style={{ animationDelay: "220ms" }}>sitting in your systems.</span>
+          <span style={{ animationDelay: "140ms" }}>for data you already own.</span>
         </span>
       </h1>
 
@@ -100,12 +97,9 @@ export function Hero() {
           className="text-[clamp(1rem,1.4vw,1.2rem)] leading-[1.5] max-w-[48ch] text-pretty"
           style={{ animation: "fadeIn 600ms ease 380ms both" }}
         >
-          We just paid one company $943,000 for theirs. The AI labs have
-          finished the internet. What they need next is how real operators
-          actually work, and that only exists inside companies like yours.
-          Retail, logistics, legal, insurance, finance, manufacturing,
-          healthcare, whatever you run. You already own the data. We get you
-          paid for it.
+          AI companies pay real money for business records. The kind that show
+          how work actually gets done inside your company. Yours are worth more
+          than you think, and it is free to find out.
         </p>
         <div
           className="flex flex-col gap-[var(--space-item)]"
@@ -121,7 +115,7 @@ export function Hero() {
             </MagneticButton>
           </div>
           <p className="text-[11px] font-semibold tracking-[0.14em] uppercase text-[var(--color-neutral-700)] leading-[1.8]">
-            Free appraisal · No commitment · You approve every deal
+            Free · No commitment · You approve every deal
           </p>
         </div>
       </div>
