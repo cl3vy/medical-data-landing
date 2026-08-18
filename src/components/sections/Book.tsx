@@ -24,7 +24,7 @@ export function Book() {
             it.
           </p>
           <p className="mt-[var(--space-group)] text-[10px] font-semibold tracking-[0.14em] uppercase text-[var(--color-neutral-700)] leading-[1.9]">
-            One call · No obligation · You set the terms
+            One form · No obligation · You set the terms
           </p>
           <MagneticButton
             href={CAL_URL}

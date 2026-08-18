@@ -9,7 +9,7 @@ import { Reveal } from "@/components/ui/Reveal";
 gsap.registerPlugin(ScrollTrigger);
 
 const FACTS = [
-  { dt: "Appraisal", dd: "Free. One call." },
+  { dt: "Appraisal", dd: "Free. One form." },
   { dt: "Timeline", dd: "An offer in about two weeks." },
   { dt: "Payment", dd: "Cash upfront, royalties, or both." },
 ];

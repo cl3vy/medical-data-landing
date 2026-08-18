@@ -74,7 +74,7 @@ export function Closing() {
           delay={0.1}
           className="mt-[var(--space-block)] text-[clamp(1.05rem,1.5vw,1.3rem)] leading-[1.5] max-w-[48ch] text-pretty"
         >
-          One call, and you will know the number. Book the appraisal, keep the
+          One form, and you will know the number. Send it, keep the
           number, walk away if you want to.
         </Reveal>
       </div>

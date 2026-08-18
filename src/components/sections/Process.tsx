@@ -4,9 +4,9 @@ const STEPS = [
   {
     n: "01",
     title: "Free appraisal",
-    body: "We look at what you have and tell you what it is worth. Takes one call. No cost, no paperwork, no obligation to do anything with the number.",
+    body: "We look at what you have and tell you what it is worth. One form. No cost, no paperwork, no obligation to do anything with the number.",
     example:
-      "A logistics operator brought eleven years of dispatch and delivery records. Appraised in one call, $600k–$1.1M.",
+      "A logistics operator brought eleven years of dispatch and delivery records. Appraised through the form, $600k–$1.1M.",
   },
   {
     n: "02",
@@ -20,7 +20,7 @@ const STEPS = [
     title: "You get paid",
     body: "Checks start arriving, and they keep arriving. You walk away owning a clean dataset you never had before, plus a licence you can renegotiate or end.",
     example:
-      "First payment cleared 34 days after the appraisal call. Royalties renew annually.",
+      "First payment cleared 34 days after the appraisal. Royalties renew annually.",
   },
 ];
 
@@ -32,7 +32,7 @@ export function Process() {
         id="process-h"
         className="text-[clamp(2rem,4.8vw,3.6rem)] leading-[1] tracking-[-0.03em] font-extrabold max-w-[16ch]"
       >
-        Three steps. One call to start.
+        Three steps. One form to start.
       </Reveal>
 
       <ol
