@@ -6,7 +6,7 @@ const STEPS = [
     title: "Free appraisal",
     body: "We look at what you have and tell you what it is worth. One form. No cost, no paperwork, no obligation to do anything with the number.",
     example:
-      "A logistics operator brought eleven years of dispatch and delivery records. Appraised through the form, $600k–$1.1M.",
+      "A logistics operator brought eleven years of dispatch and delivery records. Appraised at $600k–$1.1M.",
   },
   {
     n: "02",
