@@ -8,7 +8,7 @@ export function Footer() {
         data-stack
         style={{ gridTemplateColumns: "minmax(0, 1fr) auto" }}
       >
-        <p className="font-extrabold text-[22px] tracking-[-0.02em]">SHFA</p>
+        <p className="font-extrabold text-[22px] tracking-[-0.02em]">SIGIL</p>
         <nav aria-label="Footer" className="flex flex-wrap gap-6">
           {NAV_LINKS.map((link) => (
             <a key={link.href} href={link.href} className="nav-link">
@@ -23,7 +23,7 @@ export function Footer() {
         datasets by web form or email.
       </p>
       <p className="mt-[var(--space-item)] text-[11px] leading-relaxed text-[var(--color-neutral-700)] max-w-[78ch]">
-        © 2026 Shfa. Financial figures describe representative and potential
+        © 2026 Sigil. Financial figures describe representative and potential
         outcomes only; results vary with data quality, ownership rights, buyer
         demand, permitted uses, and final deal terms. Slider output is an
         illustrative estimate, not an offer.

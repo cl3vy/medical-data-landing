@@ -50,7 +50,7 @@ export function Book() {
         >
           <iframe
             src={CAL_EMBED_URL}
-            title="Book a free data appraisal with Shfa"
+            title="Book a free data appraisal with Sigil"
             loading="lazy"
             className="w-full h-[560px] border-0 block"
           />

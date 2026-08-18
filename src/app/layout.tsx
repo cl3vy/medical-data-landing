@@ -11,7 +11,7 @@ const archivo = Archivo({
 });
 
 export const metadata: Metadata = {
-  title: "SHFA — Healthcare data licensing",
+  title: "SIGIL — Healthcare data licensing",
   description:
     "Get paid for the clinical and operational data already sitting in your systems. Free appraisal. You approve every deal.",
 };

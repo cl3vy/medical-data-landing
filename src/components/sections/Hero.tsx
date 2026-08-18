@@ -68,7 +68,7 @@ export function Hero() {
         className="font-extrabold leading-[0.82] tracking-[-0.06em] text-[clamp(3.5rem,10vw,8.5rem)] text-[var(--color-accent)] origin-left will-change-transform"
         aria-hidden
       >
-        SHFA
+        SIGIL
       </p>
       <div
         ref={ruleRef}

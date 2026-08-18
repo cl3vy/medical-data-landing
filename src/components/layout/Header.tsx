@@ -37,7 +37,7 @@ export function Header() {
             href="#top"
             className="mr-auto font-extrabold text-[19px] tracking-[-0.02em] no-underline text-[var(--color-text)]"
           >
-            SHFA
+            SIGIL
           </a>
           <nav
             data-desktop-only
