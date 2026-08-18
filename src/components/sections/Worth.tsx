@@ -27,13 +27,10 @@ export function Worth() {
 
   return (
     <section id="worth" aria-labelledby="worth-h" className="content-wrap section-pad">
-      <div className="border-t-2 border-[var(--color-divider)] pt-[var(--space-item)]">
-        <p className="kicker text-[var(--color-neutral-700)]">02 — What it&apos;s worth</p>
-      </div>
       <Reveal
         as="h2"
         id="worth-h"
-        className="mt-[var(--space-block)] text-[clamp(2rem,4.8vw,3.6rem)] leading-[1] tracking-[-0.03em] font-extrabold max-w-[22ch]"
+        className="border-t-2 border-[var(--color-divider)] pt-[var(--space-block)] text-[clamp(2rem,4.8vw,3.6rem)] leading-[1] tracking-[-0.03em] font-extrabold max-w-[22ch]"
       >
         Tell us your vertical. See the number.
       </Reveal>

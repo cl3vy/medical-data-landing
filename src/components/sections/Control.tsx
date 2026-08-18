@@ -62,13 +62,10 @@ export function Control() {
       className="mt-[var(--space-section)] bg-[var(--color-neutral-900)] text-[var(--color-neutral-100)] py-[var(--space-band)] ink-grain will-change-[clip-path]"
     >
       <div className="content-wrap">
-        <div className="border-t-2 border-[var(--color-neutral-700)] pt-[var(--space-item)]">
-          <p className="kicker text-[var(--color-neutral-400)]">04 — Control</p>
-        </div>
         <Reveal
           as="h2"
           id="control-h"
-          className="mt-[var(--space-block)] text-[clamp(2.1rem,5.6vw,4.2rem)] leading-[0.98] tracking-[-0.035em] font-extrabold max-w-[20ch]"
+          className="border-t-2 border-[var(--color-neutral-700)] pt-[var(--space-block)] text-[clamp(2.1rem,5.6vw,4.2rem)] leading-[0.98] tracking-[-0.035em] font-extrabold max-w-[20ch]"
         >
           Nothing leaves your building without your signature.
         </Reveal>

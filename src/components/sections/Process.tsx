@@ -104,13 +104,10 @@ export function Process() {
         ref={pinRef}
         className="content-wrap min-h-[100svh] flex flex-col justify-center py-[var(--space-block)]"
       >
-        <div className="border-t-2 border-[var(--color-divider)] pt-[var(--space-item)]">
-          <p className="kicker text-[var(--color-neutral-700)]">03 — How it works</p>
-        </div>
         <Reveal
           as="h2"
           id="process-h"
-          className="mt-[var(--space-block)] text-[clamp(2rem,4.8vw,3.6rem)] leading-[1] tracking-[-0.03em] font-extrabold"
+          className="border-t-2 border-[var(--color-divider)] pt-[var(--space-block)] text-[clamp(2rem,4.8vw,3.6rem)] leading-[1] tracking-[-0.03em] font-extrabold"
         >
           Three steps. One call to start.
         </Reveal>

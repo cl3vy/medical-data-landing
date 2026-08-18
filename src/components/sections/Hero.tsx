@@ -76,16 +76,9 @@ export function Hero() {
         aria-hidden
       />
 
-      <p
-        className="kicker text-[var(--color-accent-700)] mt-[var(--space-group)]"
-        style={{ animation: "fadeIn 500ms ease 80ms both" }}
-      >
-        00 — Data licensing
-      </p>
-
       <h1
         id="hero-h"
-        className="mt-[var(--space-item)] text-[clamp(2.25rem,5.8vw,5.2rem)] leading-[0.98] tracking-[-0.04em] font-extrabold max-w-[18ch]"
+        className="mt-[var(--space-group)] text-[clamp(2.25rem,5.8vw,5.2rem)] leading-[0.98] tracking-[-0.04em] font-extrabold max-w-[18ch]"
       >
         <span className="line-mask">
           <span style={{ animationDelay: "60ms" }}>$300,000 to $3,000,000</span>

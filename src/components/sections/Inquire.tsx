@@ -111,13 +111,8 @@ export function Inquire() {
 
   return (
     <section id="inquire" aria-labelledby="inquire-h" className="content-wrap section-pad">
-      <div className="border-t-2 border-[var(--color-divider)] pt-[var(--space-item)]">
-        <p className="kicker text-[var(--color-neutral-700)]">
-          05 — Tell us about your data
-        </p>
-      </div>
       <div
-        className="grid gap-x-[clamp(48px,7vw,104px)] gap-y-[var(--space-block)] mt-[var(--space-block)] items-start"
+        className="grid gap-x-[clamp(48px,7vw,104px)] gap-y-[var(--space-block)] items-start border-t-2 border-[var(--color-divider)] pt-[var(--space-block)]"
         data-stack
         style={{ gridTemplateColumns: "minmax(0, 0.8fr) minmax(0, 1.2fr)" }}
       >
