@@ -9,7 +9,7 @@ import { Process } from "@/components/sections/Process";
 import { Control } from "@/components/sections/Control";
 import { Closing } from "@/components/sections/Closing";
 import { Inquire } from "@/components/sections/Inquire";
-import { Book } from "@/components/sections/Book";
+// import { Book } from "@/components/sections/Book";
 
 export default function Home() {
   return (
@@ -25,7 +25,9 @@ export default function Home() {
         <Control />
         <Closing />
         <Inquire />
-        <Book />
+        {/* Calendar / booking — restore <Book /> to show Cal.com again.
+            Link: https://cal.com/team/shfa-ai/technical-test */}
+        {/* <Book /> */}
       </main>
       <Footer />
     </>
