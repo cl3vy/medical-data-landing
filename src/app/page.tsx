@@ -2,6 +2,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { ScrollProgress } from "@/components/layout/ScrollProgress";
 import { Hero } from "@/components/sections/Hero";
+import { Partners } from "@/components/sections/Partners";
 import { Proof } from "@/components/sections/Proof";
 import { Value } from "@/components/sections/Value";
 import { Process } from "@/components/sections/Process";
@@ -17,6 +18,7 @@ export default function Home() {
       <Header />
       <main id="top">
         <Hero />
+        <Partners />
         <Proof />
         <Value />
         <Process />
