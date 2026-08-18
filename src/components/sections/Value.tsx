@@ -8,10 +8,10 @@ import { Reveal } from "@/components/ui/Reveal";
 gsap.registerPlugin(ScrollTrigger);
 
 const BUYERS = [
-  "Clinical notes and care pathways",
-  "Denials, appeals, and what overturned them",
-  "Intake, triage, and referral trails",
-  "Imaging and diagnostics with outcomes attached",
+  "Operational records and the decisions behind them",
+  "Disputes, exceptions, and what resolved them",
+  "Intake, routing, and handoff trails",
+  "Transactions and outcomes attached to them",
   "Anything a new hire would take a year to learn",
 ];
 
@@ -83,10 +83,11 @@ export function Value() {
             className="mt-[var(--space-group)] text-[clamp(1rem,1.3vw,1.15rem)] leading-[1.6] max-w-[54ch] text-pretty"
           >
             Labs scraped the whole internet and hit the bottom of it. What they
-            cannot scrape is judgment: the wound-care nurse who knows which
-            dressing holds, the biller who knows which appeal gets overturned.
-            That knowledge lives in your records and nowhere else. Scarce things
-            get expensive, and the deeper your expertise, the bigger the check.
+            cannot scrape is judgment: the claims adjuster who knows which case
+            settles, the dispatcher who knows which route holds, the underwriter
+            who knows which risk is mispriced. That knowledge lives in your
+            records and nowhere else. Scarce things get expensive, and the
+            deeper your expertise, the bigger the check.
           </Reveal>
           <Reveal
             as="p"
@@ -152,8 +153,8 @@ export function Value() {
               ))}
             </ul>
             <p className="mt-[var(--space-group)] pt-[var(--space-item)] border-t border-[var(--color-divider)] text-[12px] leading-relaxed text-[var(--color-neutral-700)]">
-              Illustrative figures — swap for your own sourcing. The point
-              holds: the untouched supply is the part you are sitting on.
+              Illustrative figures. The point holds: the untouched supply is
+              the part you are sitting on.
             </p>
           </Reveal>
         </div>

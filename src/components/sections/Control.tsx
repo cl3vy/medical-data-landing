@@ -10,7 +10,7 @@ gsap.registerPlugin(ScrollTrigger);
 const PILLARS = [
   {
     title: "You draw the line",
-    body: "You decide what is included and what never leaves the premises. De-identification happens before anything is licensed, and we do not want identifiers in the first place.",
+    body: "You decide what is included and what never leaves the premises. Identifiers are stripped before anything is licensed, and we do not want them in the first place.",
   },
   {
     title: "You pick the buyer",

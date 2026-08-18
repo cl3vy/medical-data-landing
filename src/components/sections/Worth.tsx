@@ -5,17 +5,23 @@ import { AnimatePresence, motion } from "motion/react";
 import { Reveal } from "@/components/ui/Reveal";
 import { RangeSlider } from "@/components/ui/RangeSlider";
 import { computeEstimate } from "@/lib/estimate";
-import { EXAMPLES } from "@/lib/examples";
+import { EXAMPLES, VERTICALS } from "@/lib/examples";
 
 export function Worth() {
   const [records, setRecords] = useState(120);
   const [years, setYears] = useState(10);
   const [depth, setDepth] = useState(3);
+  const [vertical, setVertical] = useState<(typeof VERTICALS)[number]["id"]>(
+    "retail",
+  );
   const [ex, setEx] = useState(0);
 
+  const verticalMult =
+    VERTICALS.find((v) => v.id === vertical)?.mult ?? 1;
+
   const estimate = useMemo(
-    () => computeEstimate(records, years, depth),
-    [records, years, depth],
+    () => computeEstimate(records, years, depth, verticalMult),
+    [records, years, depth, verticalMult],
   );
   const example = EXAMPLES[ex];
 
@@ -29,8 +35,13 @@ export function Worth() {
         id="worth-h"
         className="mt-[var(--space-block)] text-[clamp(2rem,4.8vw,3.6rem)] leading-[1] tracking-[-0.03em] font-extrabold max-w-[22ch]"
       >
-        Move three sliders. See the number.
+        Tell us your vertical. See the number.
       </Reveal>
+      <p className="mt-[var(--space-group)] text-[clamp(1rem,1.3vw,1.15rem)] leading-[1.6] max-w-[54ch]">
+        Every industry prices differently. A year of legal case files is not
+        worth the same as a year of warehouse scans or a year of policy claims.
+        Move the inputs, pick your sector, and the estimate follows.
+      </p>
 
       <div
         className="grid gap-0 mt-[var(--space-block)] border-t-2 border-[var(--color-divider)]"
@@ -43,7 +54,7 @@ export function Worth() {
         >
           <RangeSlider
             id="s-records"
-            label="Patient records on file"
+            label="Records on file"
             valueLabel={estimate.recordsLabel}
             min={5}
             max={500}
@@ -63,7 +74,7 @@ export function Worth() {
           />
           <RangeSlider
             id="s-depth"
-            label="Clinical depth"
+            label="Data depth"
             valueLabel={estimate.depthLabel}
             min={1}
             max={5}
@@ -71,6 +82,28 @@ export function Worth() {
             value={depth}
             onChange={setDepth}
           />
+          <div>
+            <p className="text-[10px] font-semibold tracking-[0.16em] uppercase text-[var(--color-neutral-700)] mb-[var(--space-item)]">
+              Vertical
+            </p>
+            <div
+              className="tile-grid"
+              role="tablist"
+              aria-label="Industry vertical"
+            >
+              {VERTICALS.map((item) => (
+                <label key={item.id} className="tile-opt">
+                  <input
+                    type="radio"
+                    name="vertical"
+                    checked={vertical === item.id}
+                    onChange={() => setVertical(item.id)}
+                  />
+                  {item.label}
+                </label>
+              ))}
+            </div>
+          </div>
         </div>
 
         <div className="py-[var(--space-block)] pl-0 md:pl-[var(--gutter)] flex flex-col">
@@ -108,9 +141,9 @@ export function Worth() {
             ))}
           </ul>
           <p className="mt-[var(--space-group)] text-[12px] leading-relaxed text-[var(--color-neutral-700)]">
-            Estimate only, not an offer. The multipliers here are placeholders —
-            the appraisal call replaces them with real buyer demand for your
-            specialty.
+            Estimate only, not an offer. The multipliers here are placeholders.
+            The appraisal call replaces them with real buyer demand for your
+            sector.
           </p>
         </div>
       </div>
@@ -177,7 +210,7 @@ function ExampleTable({ example }: { example: (typeof EXAMPLES)[number] }) {
       <thead>
         <tr>
           <th style={{ width: "40%" }}>Field</th>
-          <th>Example value, de-identified</th>
+          <th>Example value, anonymized</th>
         </tr>
       </thead>
       <tbody>

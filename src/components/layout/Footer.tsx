@@ -18,9 +18,11 @@ export function Footer() {
         </nav>
       </div>
       <p className="mt-[var(--space-block)] text-[13px] leading-relaxed max-w-[70ch]">
-        <strong className="font-semibold">Do not submit PHI through this website.</strong>{" "}
-        Please do not send patient information, medical records, or confidential
-        datasets by web form or email.
+        <strong className="font-semibold">
+          Do not submit confidential data through this website.
+        </strong>{" "}
+        Please do not include customer records, confidential files, or raw
+        datasets in the form. Describe the data, do not send it.
       </p>
       <p className="mt-[var(--space-item)] text-[11px] leading-relaxed text-[var(--color-neutral-700)] max-w-[78ch]">
         © 2026 Sigil. Financial figures describe representative and potential

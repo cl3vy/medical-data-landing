@@ -1,8 +1,8 @@
 export const DEPTHS = [
   { label: "Generalist", mult: 0.7, buyers: "3–5" },
   { label: "Mixed", mult: 1.0, buyers: "5–8" },
-  { label: "Specialty", mult: 1.4, buyers: "8–12" },
-  { label: "Sub-specialty", mult: 1.9, buyers: "12–18" },
+  { label: "Specialized", mult: 1.4, buyers: "8–12" },
+  { label: "Deep / expert", mult: 1.9, buyers: "12–18" },
   { label: "Rare / longitudinal", mult: 2.6, buyers: "18+" },
 ] as const;
 
@@ -15,9 +15,14 @@ export function money(n: number): string {
   return `$${Math.round(n / 1000).toLocaleString("en-US")}k`;
 }
 
-export function computeEstimate(records: number, years: number, depth: number) {
+export function computeEstimate(
+  records: number,
+  years: number,
+  depth: number,
+  verticalMult = 1,
+) {
   const d = DEPTHS[depth - 1] ?? DEPTHS[2];
-  const base = records * 1000 * 1.8 * (0.6 + years * 0.04) * d.mult;
+  const base = records * 1000 * 1.8 * (0.6 + years * 0.04) * d.mult * verticalMult;
   const low = Math.max(60_000, base * 0.6);
   const high = Math.min(4_200_000, base * 1.35);
   const rows = records * 1000 * (2 + years * 0.6);
@@ -35,7 +40,7 @@ export function computeEstimate(records: number, years: number, depth: number) {
       high > 1_500_000
         ? "Upfront + royalty"
         : years > 8
-          ? "Royalty-weighted"
+          ? "Royalty weighted"
           : "Upfront",
     recordsLabel: records >= 500 ? "500k+" : `${records}k`,
     yearsLabel: years === 20 ? "20+ yrs" : `${years} yrs`,

@@ -11,9 +11,9 @@ const archivo = Archivo({
 });
 
 export const metadata: Metadata = {
-  title: "SIGIL — Healthcare data licensing",
+  title: "SIGIL — Data licensing",
   description:
-    "Get paid for the clinical and operational data already sitting in your systems. Free appraisal. You approve every deal.",
+    "Get paid for the operational data already sitting in your systems. Free appraisal. You approve every deal.",
 };
 
 export default function RootLayout({

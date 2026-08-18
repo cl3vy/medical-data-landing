@@ -8,6 +8,7 @@ import { Worth } from "@/components/sections/Worth";
 import { Process } from "@/components/sections/Process";
 import { Control } from "@/components/sections/Control";
 import { Closing } from "@/components/sections/Closing";
+import { Inquire } from "@/components/sections/Inquire";
 import { Book } from "@/components/sections/Book";
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
         <Process />
         <Control />
         <Closing />
+        <Inquire />
         <Book />
       </main>
       <Footer />

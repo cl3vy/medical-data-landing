@@ -8,7 +8,7 @@ export function Book() {
   return (
     <section id="book" aria-labelledby="book-h" className="content-wrap section-pad">
       <div className="border-t-2 border-[var(--color-divider)] pt-[var(--space-item)]">
-        <p className="kicker text-[var(--color-neutral-700)]">05 — Book the appraisal</p>
+        <p className="kicker text-[var(--color-neutral-700)]">06 — Book the appraisal</p>
       </div>
       <div
         className="grid gap-x-[clamp(48px,7vw,104px)] gap-y-[var(--space-block)] mt-[var(--space-block)] items-start"
@@ -39,8 +39,8 @@ export function Book() {
             Open the booking page
           </MagneticButton>
           <p className="mt-[var(--space-block)] text-[12px] leading-relaxed text-[var(--color-neutral-700)] max-w-[40ch]">
-            Please do not include patient information, medical records, or
-            confidential datasets in your booking notes.
+            Please do not include customer records, confidential files, or raw
+            datasets in your booking notes.
           </p>
         </Reveal>
 

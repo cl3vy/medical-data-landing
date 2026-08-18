@@ -13,14 +13,14 @@ const STEPS = [
     title: "Free appraisal",
     body: "We look at what you have and tell you what it is worth. Takes one call. No cost, no paperwork, no obligation to do anything with the number.",
     example:
-      "A 40-clinic wound care group brought eleven years of notes. Appraised in one call, $600k–$1.1M.",
+      "A logistics operator brought eleven years of dispatch and delivery records. Appraised in one call, $600k–$1.1M.",
   },
   {
     label: "Step two",
     title: "You set the terms",
-    body: "You choose what is included, who is allowed to license it, and how the money arrives. We handle the cleaning, the structuring and the buyers. Nothing moves until you sign.",
+    body: "You choose what is included, who is allowed to license it, and how the money arrives. We handle the cleaning, the structuring, and the buyers. Nothing moves until you sign.",
     example:
-      "They excluded imaging, barred two competitors, took half upfront and half as royalty.",
+      "They excluded raw documents, barred two competitors, took half upfront and half as royalty.",
   },
   {
     label: "Step three",

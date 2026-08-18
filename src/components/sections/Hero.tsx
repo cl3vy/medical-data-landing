@@ -80,7 +80,7 @@ export function Hero() {
         className="kicker text-[var(--color-accent-700)] mt-[var(--space-group)]"
         style={{ animation: "fadeIn 500ms ease 80ms both" }}
       >
-        00 — Healthcare data licensing
+        00 — Data licensing
       </p>
 
       <h1
@@ -107,10 +107,12 @@ export function Hero() {
           className="text-[clamp(1rem,1.4vw,1.2rem)] leading-[1.5] max-w-[48ch] text-pretty"
           style={{ animation: "fadeIn 600ms ease 380ms both" }}
         >
-          We just paid one healthcare company $943,000 for theirs. The AI labs
-          have finished the internet. What they need next is how real clinicians
-          and billing teams actually work, and that only exists inside companies
-          like yours. You already own it. We get you paid for it.
+          We just paid one company $943,000 for theirs. The AI labs have
+          finished the internet. What they need next is how real operators
+          actually work, and that only exists inside companies like yours.
+          Retail, logistics, legal, insurance, finance, manufacturing,
+          healthcare, whatever you run. You already own the data. We get you
+          paid for it.
         </p>
         <div
           className="flex flex-col gap-[var(--space-item)]"
@@ -118,7 +120,7 @@ export function Hero() {
         >
           <div className="flex flex-wrap gap-2">
             <MagneticButton
-              href="#book"
+              href="#inquire"
               className="btn btn-primary py-3 px-6"
               strength={0.28}
             >

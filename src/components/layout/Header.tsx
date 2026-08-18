@@ -52,7 +52,7 @@ export function Header() {
           </nav>
           <a
             data-desktop-only
-            href="#book"
+            href="#inquire"
             className="btn btn-primary no-underline"
           >
             Free data appraisal
@@ -94,7 +94,7 @@ export function Header() {
               </motion.a>
             ))}
             <motion.a
-              href="#book"
+              href="#inquire"
               onClick={closeMenu}
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
