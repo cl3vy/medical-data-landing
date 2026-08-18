@@ -4,7 +4,6 @@ import { ScrollProgress } from "@/components/layout/ScrollProgress";
 import { Hero } from "@/components/sections/Hero";
 import { Proof } from "@/components/sections/Proof";
 import { Value } from "@/components/sections/Value";
-import { Worth } from "@/components/sections/Worth";
 import { Process } from "@/components/sections/Process";
 import { Control } from "@/components/sections/Control";
 import { Closing } from "@/components/sections/Closing";
@@ -20,7 +19,6 @@ export default function Home() {
         <Hero />
         <Proof />
         <Value />
-        <Worth />
         <Process />
         <Control />
         <Closing />

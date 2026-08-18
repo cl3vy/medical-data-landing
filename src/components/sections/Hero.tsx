@@ -119,13 +119,6 @@ export function Hero() {
             >
               Find out what your data is worth
             </MagneticButton>
-            <MagneticButton
-              href="#worth"
-              className="btn btn-secondary py-3 px-6"
-              strength={0.22}
-            >
-              Estimate it yourself
-            </MagneticButton>
           </div>
           <p className="text-[11px] font-semibold tracking-[0.14em] uppercase text-[var(--color-neutral-700)] leading-[1.8]">
             Free appraisal · No commitment · You approve every deal

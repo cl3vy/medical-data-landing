@@ -27,8 +27,7 @@ export function Footer() {
       <p className="mt-[var(--space-item)] text-[11px] leading-relaxed text-[var(--color-neutral-700)] max-w-[78ch]">
         © 2026 Sigil. Financial figures describe representative and potential
         outcomes only; results vary with data quality, ownership rights, buyer
-        demand, permitted uses, and final deal terms. Slider output is an
-        illustrative estimate, not an offer.
+        demand, permitted uses, and final deal terms.
       </p>
     </footer>
   );
