@@ -1,19 +1,26 @@
 import type { Metadata } from "next";
-import { Archivo } from "next/font/google";
-import { SmoothScroll } from "@/components/providers/SmoothScroll";
+import { Instrument_Sans, Newsreader } from "next/font/google";
 import "./globals.css";
 
-const archivo = Archivo({
+const instrument = Instrument_Sans({
   subsets: ["latin"],
-  weight: ["400", "600", "800"],
-  variable: "--font-archivo",
+  weight: ["400", "500", "600"],
+  variable: "--font-instrument",
+  display: "swap",
+});
+
+const newsreader = Newsreader({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  style: ["normal", "italic"],
+  variable: "--font-newsreader",
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "SIGIL — Data licensing",
+  title: "Find out what your data is worth",
   description:
-    "AI companies pay real money for business records you already own. Free appraisal. No commitment. You approve every deal.",
+    "AI labs need data that shows how real work gets done, and it only exists inside companies like yours. We appraise it for free, clean it, and pay you in cash and royalties.",
 };
 
 export default function RootLayout({
@@ -22,9 +29,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${archivo.variable} h-full`}>
-      <body className={`${archivo.className} min-h-full antialiased`}>
-        <SmoothScroll>{children}</SmoothScroll>
+    <html
+      lang="en"
+      className={`${instrument.variable} ${newsreader.variable} h-full`}
+    >
+      <body className={`${instrument.className} min-h-full antialiased`}>
+        {children}
       </body>
     </html>
   );
