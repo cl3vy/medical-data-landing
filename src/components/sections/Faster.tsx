@@ -33,7 +33,7 @@ export function Faster() {
           keep it running on the best AI available, so your team only gets
           faster over time.
         </p>
-        <a href="#form" className="btn-fill px-7 py-[15px] text-[15px]">
+        <a href="/form" className="btn-fill px-7 py-[15px] text-[15px]">
           Find out what your data is worth
         </a>
       </div>

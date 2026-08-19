@@ -18,7 +18,7 @@ export function Hero() {
           and pay you in cash and royalties. Then we give you AI built from your
           own data that makes your team faster.
         </p>
-        <a href="#form" className="btn-fill px-[30px] py-4 text-[16px]">
+        <a href="/form" className="btn-fill px-[30px] py-4 text-[16px]">
           Find out what your data is worth
         </a>
         <p className="mt-[22px] text-[14px] text-[var(--color-faint)]">

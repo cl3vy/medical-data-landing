@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
-import { Sunburst } from "@/components/illustrations";
 import {
   FRESHNESS,
   HOLDER_TYPES,
@@ -136,29 +135,24 @@ export function Inquire() {
     : { duration: 0.28 };
 
   return (
-    <section
-      id="form"
-      aria-labelledby="form-h"
-      className="bg-[var(--color-dark)] text-[var(--color-bg)]"
-    >
-      <div id="inquire" className="max-w-[840px] mx-auto px-[var(--gutter)] pt-[120px] pb-[100px] text-center">
-        <Sunburst className="mx-auto mb-9" />
-        <h2
+    <section aria-labelledby="form-h" className="wrap pb-[100px] pt-6">
+      <div className="max-w-[640px] mx-auto">
+        <h1
           id="form-h"
-          className="font-serif font-normal text-[clamp(1.95rem,4.8vw,2.875rem)] leading-[1.1] tracking-[-0.01em] mb-6 text-pretty"
+          className="font-serif font-normal text-[clamp(1.95rem,4.8vw,2.875rem)] leading-[1.1] tracking-[-0.01em] mb-5 text-pretty"
         >
-          Somebody is going to get paid for your data this year. It should be
-          you
-        </h2>
-        <p className="text-[17px] leading-[1.7] text-[var(--color-stone)] mx-auto mb-10 max-w-[56ch] text-pretty">
-          Every company sitting on years of records is sitting on an asset. Most
-          will never find out what it is worth. Finding out costs you nothing:
-          one form, a real number in two weeks, and every decision after that
-          stays yours.
+          Start with the form. We reply with a number.
+        </h1>
+        <p className="text-[17px] leading-[1.7] text-[var(--color-muted)] mb-4 text-pretty">
+          Two steps. First the shape of the data, then who to send the number
+          to. No files, no records, nothing confidential.
+        </p>
+        <p className="mb-10 text-[14px] text-[var(--color-faint)]">
+          One form&ensp;·&ensp;No obligation&ensp;·&ensp;You set the terms
         </p>
 
         {sent ? (
-          <div className="mx-auto max-w-[640px] bg-[var(--color-bg)] text-[var(--color-text)] rounded-[var(--radius-card)] p-8 text-left min-h-[220px] flex flex-col justify-center">
+          <div className="bg-[var(--color-card)] text-[var(--color-text)] rounded-[var(--radius-card)] p-8 text-left min-h-[220px] flex flex-col justify-center">
             <p className="text-[13px] tracking-[0.12em] uppercase text-[var(--color-accent)] font-semibold">
               Received
             </p>
@@ -172,7 +166,7 @@ export function Inquire() {
         ) : (
           <form
             onSubmit={goNext}
-            className="mx-auto max-w-[640px] bg-[var(--color-bg)] text-[var(--color-text)] rounded-[var(--radius-card)] p-8 grid gap-6 text-left"
+            className="bg-[var(--color-card)] text-[var(--color-text)] rounded-[var(--radius-card)] p-8 grid gap-6 text-left"
           >
             <div>
               <div className="flex items-baseline justify-between gap-4 mb-2.5">
@@ -393,16 +387,10 @@ export function Inquire() {
           </form>
         )}
 
-        <p className="mt-6 text-[14px] text-[var(--color-faint)]">
-          One form&ensp;·&ensp;No obligation&ensp;·&ensp;You set the terms
+        <p className="mt-6 text-[13px] leading-relaxed text-[var(--color-faint)]">
+          Describe your data in the form. Do not send records, customer files,
+          or anything confidential.
         </p>
-        <footer className="mt-14 pt-7 border-t border-[var(--color-dark-line)] text-[13px] text-[var(--color-faint)]">
-          <p>
-            Describe your data in the form. Do not send records, customer files,
-            or anything confidential.
-          </p>
-          <p className="mt-3">© 2026 Sigil</p>
-        </footer>
       </div>
     </section>
   );

@@ -27,7 +27,7 @@ export function Clean() {
             inside your company with powerful AI automations, analytics, and
             more. Either way, the organized system is yours to keep.
           </p>
-          <a href="#form" className="btn-ink px-7 py-[15px] text-[15px]">
+          <a href="/form" className="btn-ink px-7 py-[15px] text-[15px]">
             Find out what your data is worth
           </a>
         </div>

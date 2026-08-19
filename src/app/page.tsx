@@ -5,7 +5,7 @@ import { Steps } from "@/components/sections/Steps";
 import { Appraisal } from "@/components/sections/Appraisal";
 import { Clean } from "@/components/sections/Clean";
 import { Faster } from "@/components/sections/Faster";
-import { Inquire } from "@/components/sections/Inquire";
+import { Closing } from "@/components/sections/Closing";
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
         <Appraisal />
         <Clean />
         <Faster />
-        <Inquire />
+        <Closing />
       </main>
     </>
   );
