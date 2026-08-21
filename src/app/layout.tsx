@@ -18,9 +18,9 @@ const newsreader = Newsreader({
 });
 
 export const metadata: Metadata = {
-  title: "Find out what your data is worth",
+  title: "Find out what your manufacturing data is worth",
   description:
-    "AI labs need data that shows how real work gets done, and it only exists inside companies like yours. We appraise it for free, clean it, and pay you in cash and royalties.",
+    "AI labs need data that shows how real manufacturing work gets done, and it only exists inside plants like yours. We appraise it for free, clean it, and pay you in cash and royalties.",
 };
 
 export default function RootLayout({

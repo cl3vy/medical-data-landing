@@ -31,8 +31,9 @@ export function Steps() {
         From one form to your first payment in three steps
       </h2>
       <p className="text-center text-[17px] text-[var(--color-muted)] mx-auto mb-16 max-w-[58ch] leading-[1.65]">
-        We appraise your data, clean it up, and then pay you for it while making
-        your business faster with AI built from it. Here is how it works.
+        We appraise your manufacturing data, clean it up, and then pay you for
+        it while making your plant faster with AI built from it. Here is how it
+        works.
       </p>
       <div
         className="grid gap-7"

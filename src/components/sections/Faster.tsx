@@ -27,7 +27,7 @@ export function Faster() {
         </p>
         <p className="text-[17px] leading-[1.7] text-[var(--color-muted)] mb-9 text-pretty">
           Then we give you back what your data built: AI trained on how your
-          company already works, installed for your team. It takes over the
+          plant already works, installed for your team. It takes over the
           repetitive work your people hate, so they spend their day on the work
           that needs them. Same team, same jobs, more done every day. And we
           keep it running on the best AI available, so your team only gets

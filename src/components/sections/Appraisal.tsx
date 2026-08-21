@@ -18,12 +18,12 @@ export function Appraisal() {
           Your appraisal is free, takes ten minutes, and commits you to nothing
         </h2>
         <p className="text-[17px] leading-[1.7] text-[var(--color-muted)] mb-9 text-pretty">
-          All it takes is the form below. Tell us about your business and the
-          data you have, and we come back with everything you need to make a
-          decision: the automations we can build for your company, how much more
-          efficient your teams will become, and how much we will pay you for
-          your data. It costs nothing, you never upload a file, and there is no
-          obligation.
+          All it takes is the form. Tell us about your plant and the data you
+          have, and we come back with everything you need to make a decision:
+          the automations we can build for your company, how much more efficient
+          your teams will become, and how much we will pay you for your
+          manufacturing data. It costs nothing, you never upload a file, and
+          there is no obligation.
         </p>
         <a href="/form" className="btn-fill px-7 py-[15px] text-[15px]">
           Find out what your data is worth

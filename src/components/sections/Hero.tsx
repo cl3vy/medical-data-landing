@@ -8,15 +8,15 @@ export function Hero() {
     >
       <div>
         <h1 className="font-serif font-normal text-[clamp(2.05rem,5.6vw,3.625rem)] leading-[1.06] tracking-[-0.015em] text-pretty mb-7">
-          We pay your company up to{" "}
+          We pay your manufacturing company up to{" "}
           <em className="italic text-[var(--color-accent)]">$3,000,000</em>{" "}
-          for business records you already own.
+          for records you already own.
         </h1>
         <p className="text-[18px] leading-[1.65] text-[var(--color-muted)] mb-9 max-w-[52ch] text-pretty">
-          AI labs need data that shows how real work gets done, and it only
-          exists inside companies like yours. We appraise it for free, clean it,
-          and pay you in cash and royalties. Then we give you AI built from your
-          own data that makes your team faster.
+          AI labs need data that shows how real manufacturing work gets done,
+          and it only exists inside plants like yours. We appraise it for free,
+          clean it, and pay you in cash and royalties. Then we give you AI built
+          from your own data that makes your team faster.
         </p>
         <a href="/form" className="btn-fill px-[30px] py-4 text-[16px]">
           Find out what your data is worth

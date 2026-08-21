@@ -144,8 +144,8 @@ export function Inquire() {
           Start with the form. We reply with a number.
         </h1>
         <p className="text-[17px] leading-[1.7] text-[var(--color-muted)] mb-4 text-pretty">
-          Two steps. First the shape of the data, then who to send the number
-          to. No files, no records, nothing confidential.
+          Two steps. First the shape of the manufacturing data, then who to send
+          the number to. No files, no records, nothing confidential.
         </p>
         <p className="mb-10 text-[14px] text-[var(--color-faint)]">
           One form&ensp;·&ensp;No obligation&ensp;·&ensp;You set the terms
@@ -198,7 +198,7 @@ export function Inquire() {
                   <SelectField
                     id="vertical"
                     label="Vertical"
-                    hint="Which field?"
+                    hint="Which kind of manufacturing?"
                     options={INQUIRE_VERTICALS}
                     value={form.vertical}
                     onChange={(v) => set("vertical", v)}
@@ -206,8 +206,8 @@ export function Inquire() {
                   <div className="field">
                     <label htmlFor="taskType">Task type</label>
                     <p className="text-[12px] leading-relaxed text-[var(--color-muted)] -mt-1">
-                      The specific job the experts do. e.g. quote and tender a
-                      load, draft a contract clause.
+                      The specific job on the line. e.g. set up a CNC job,
+                      inspect a weld.
                     </p>
                     <input
                       id="taskType"
@@ -216,7 +216,7 @@ export function Inquire() {
                       required
                       value={form.taskType}
                       onChange={(e) => set("taskType", e.target.value)}
-                      placeholder="e.g. draft a contract clause"
+                      placeholder="e.g. set up a CNC job"
                     />
                   </div>
                   <div

@@ -16,9 +16,9 @@ export function Clean() {
             full control
           </h2>
           <p className="text-[17px] leading-[1.7] text-[var(--color-muted)] mb-5 text-pretty">
-            Most companies run on years of records scattered across tools,
+            Most manufacturers run on years of records scattered across tools,
             inboxes, and spreadsheets. Our team maps your workflows, structures
-            the data, and cleans it all up, so for the first time your business
+            the data, and cleans it all up, so for the first time your plant
             runs on one organized, usable system.
           </p>
           <p className="text-[17px] leading-[1.7] text-[var(--color-muted)] mb-9 text-pretty">

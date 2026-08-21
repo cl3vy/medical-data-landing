@@ -21,11 +21,12 @@ export function SocialProof() {
             OpenAI and the biggest names in AI buy through us.
           </h2>
           <p className="text-[17px] leading-[1.7] text-[var(--color-stone)] mb-10 text-pretty">
-            We work with OpenAI, Anthropic, and micro1. When your data is ready,
-            it goes in front of the buyers with the deepest pockets in the
-            industry, and you get paid what it is actually worth. Working with
-            the frontier of AI also means you get the deepest AI automations and
-            analytics available, built to make your business more efficient.
+            We work with OpenAI, Anthropic, and micro1. When your manufacturing
+            data is ready, it goes in front of the buyers with the deepest
+            pockets in the industry, and you get paid what it is actually worth.
+            Working with the frontier of AI also means you get the deepest AI
+            automations and analytics available, built to make your plant more
+            efficient.
           </p>
           <p className="flex flex-wrap gap-9 items-center font-serif text-[22px] text-[var(--color-bg)]">
             <span>OpenAI</span>
