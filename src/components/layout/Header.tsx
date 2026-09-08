@@ -13,7 +13,7 @@ export function Header() {
           Sigil
         </span>
       </a>
-      <a href="/form" className="btn-ghost px-[22px] py-2.5 text-[14px] font-medium">
+      <a href="/intake" className="btn-ghost px-[22px] py-2.5 text-[14px] font-medium">
         Get your appraisal
       </a>
     </header>

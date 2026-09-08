@@ -15,7 +15,7 @@ export function Closing() {
           you nothing: one form, a real number in two weeks, and every decision
           after that stays yours.
         </p>
-        <a href="/form" className="btn-fill px-[34px] py-[17px] text-[16px]">
+        <a href="/intake" className="btn-fill px-[34px] py-[17px] text-[16px]">
           Find out what your data is worth
         </a>
         <p className="mt-6 text-[14px] text-[var(--color-faint)]">

@@ -25,7 +25,7 @@ export function Appraisal() {
           manufacturing data. It costs nothing, you never upload a file, and
           there is no obligation.
         </p>
-        <a href="/form" className="btn-fill px-7 py-[15px] text-[15px]">
+        <a href="/intake" className="btn-fill px-7 py-[15px] text-[15px]">
           Find out what your data is worth
         </a>
       </div>
