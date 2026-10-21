@@ -1,3 +1,4 @@
+import { BookAppraisal } from "@/components/BookAppraisal";
 import { Sunburst } from "@/components/illustrations";
 
 export function Closing() {
@@ -15,9 +16,7 @@ export function Closing() {
           you nothing: one form, a real number in two weeks, and every decision
           after that stays yours.
         </p>
-        <a href="/intake" className="btn-fill px-[34px] py-[17px] text-[16px]">
-          Find out what your data is worth
-        </a>
+        <BookAppraisal className="btn-fill px-[34px] py-[17px] text-[16px]" />
         <p className="mt-6 text-[14px] text-[var(--color-faint)]">
           One form&ensp;·&ensp;No obligation&ensp;·&ensp;You set the terms
         </p>

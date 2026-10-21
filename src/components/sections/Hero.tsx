@@ -1,3 +1,4 @@
+import { BookAppraisal } from "@/components/BookAppraisal";
 import { HeroValue } from "@/components/illustrations";
 
 export function Hero() {
@@ -18,9 +19,7 @@ export function Hero() {
           clean it, and pay you in cash and royalties. Then we give you AI built
           from your own data that makes your team faster.
         </p>
-        <a href="/intake" className="btn-fill px-[30px] py-4 text-[16px]">
-          Find out what your data is worth
-        </a>
+        <BookAppraisal className="btn-fill px-[30px] py-4 text-[16px]" />
         <p className="mt-[22px] text-[14px] text-[var(--color-faint)]">
           Free appraisal&ensp;·&ensp;No commitment&ensp;·&ensp;You approve every
           deal

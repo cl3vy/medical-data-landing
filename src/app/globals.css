@@ -100,7 +100,8 @@
   .btn-fill,
   .btn-ghost,
   .btn-ink,
-  .btn-ghost-light {
+  .btn-ghost-light,
+  .btn-ghost-on-dark {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -159,6 +160,17 @@
   .btn-ghost-light:hover {
     background: color-mix(in srgb, var(--color-text) 6%, transparent);
     color: var(--color-text);
+  }
+
+  .btn-ghost-on-dark {
+    background: transparent;
+    color: var(--color-bg);
+    border: 1.5px solid color-mix(in srgb, var(--color-bg) 45%, transparent);
+  }
+
+  .btn-ghost-on-dark:hover {
+    background: var(--color-bg);
+    color: var(--color-dark);
   }
 
   .btn-block {
