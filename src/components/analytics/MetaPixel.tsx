@@ -1,25 +1,27 @@
-const PIXEL_ID = "2035818750422277";
+"use client";
 
-const pixelCode = `
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '${PIXEL_ID}');
-fbq('track', 'PageView');
-`;
+import Script from "next/script";
+
+const PIXEL_ID = "2035818750422277";
 
 export function MetaPixel() {
   return (
     <>
-      <script id="meta-pixel" dangerouslySetInnerHTML={{ __html: pixelCode }} />
+      <Script id="meta-pixel" strategy="afterInteractive">
+        {`
+          !function(f,b,e,v,n,t,s)
+          {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+          n.queue=[];t=b.createElement(e);t.async=!0;
+          t.src=v;s=b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t,s)}(window, document,'script',
+          'https://connect.facebook.net/en_US/fbevents.js');
+          fbq('init', '${PIXEL_ID}');
+          fbq('track', 'PageView');
+        `}
+      </Script>
       <noscript>
-        {/* Meta's noscript fallback must be a raw pixel image. */}
-        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           height="1"
           width="1"

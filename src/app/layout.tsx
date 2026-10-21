@@ -40,10 +40,8 @@ export default function RootLayout({
       lang="en"
       className={`${instrument.variable} ${newsreader.variable} h-full`}
     >
-      <head>
-        <MetaPixel />
-      </head>
       <body className={`${instrument.className} min-h-full antialiased`}>
+        <MetaPixel />
         {children}
         <CalEmbed />
       </body>
